@@ -1,0 +1,22 @@
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include 'includes/head.html' %}
+    {% bootstrap_css %}
+</head>
+
+<body>
+    {% include 'includes/barradenavegacion.html' %} <!-- Contenido principal -->
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    {% include 'includes/footer.html' %}
+    {% bootstrap_javascript jquery="full" %}
+    <!-- JavaScript principal -->
+    <!-- Bootstrap 4 CSS -->
+</body>
+
+</html>

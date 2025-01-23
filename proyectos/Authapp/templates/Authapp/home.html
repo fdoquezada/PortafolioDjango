@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="container mt-4">
+    <h1 class="text-center">Bienvenido a nuestro Curso de Django</h1>
+    <p class="text-center">Aprende a desarrollar aplicaciones web con Django, el potente framework de Python.</p>
+
+    <!-- Carrusel de imágenes -->
+    <div id="programmersCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://media.istockphoto.com/id/1911521695/photo/successful-businessman-in-modern-office-working-on-laptop.jpg?s=2048x2048&w=is&k=20&c=8avD-288pw2LR4xBlyBxgxNLSDbJfeKwvU0L-3oR7F4=" class="d-block w-100" alt="Programador 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://media.istockphoto.com/id/1151137603/photo/cheerful-businessman-pointing-with-finger-and-looking-at-camera-near-laptop.jpg?s=2048x2048&w=is&k=20&c=wJuqdHsnK804H7oQKVceSXI3pQcRC65aC-9ss5rA_gc=" class="d-block w-100" alt="Programador 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://media.istockphoto.com/id/1164885329/photo/getting-lost-in-the-code.jpg?s=2048x2048&w=is&k=20&c=IDvWkv6k9DG5JOb1fuiTflmbE6s2PtM-NR88iVPIYUQ=" class="d-block w-100" alt="Programador 3">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#programmersCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#programmersCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+    <h2 class="mt-4">¿Qué aprenderás?</h2>
+    <ul>
+        <li>Introducción a Django y su arquitectura</li>
+        <li>Creación de modelos y migraciones</li>
+        <li>Desarrollo de vistas y plantillas</li>
+        <li>Gestión de formularios y validaciones</li>
+        <li>Autenticación y autorización de usuarios</li>
+        <li>Despliegue de aplicaciones Django</li>
+    </ul>
+
+    <h2 class="mt-4">¡Inscríbete ahora!</h2>
+    <p>Únete a nuestra comunidad de programadores y comienza tu viaje en el desarrollo web con Django.</p>
+</div>
+
+
+
+{% endblock %}

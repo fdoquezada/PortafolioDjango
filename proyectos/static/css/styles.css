@@ -1,0 +1,30 @@
+/* Animación personalizada para el modal */
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+        /* Comienza fuera de la pantalla */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Finaliza en su posición original */
+    }
+}
+
+/* Aplicar la animación al modal cuando se activa */
+.modal.fade.show {
+    animation: slideInFromTop 0.5s ease-out;
+    /* Ajusta la duración y el tipo de animación */
+}
+
+.form-group label {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+}
+  
+.form-control::placeholder {
+    text-align: center;
+    color: #0707ec;
+} 
